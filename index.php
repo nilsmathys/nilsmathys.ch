@@ -53,7 +53,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
 
     <meta name="author" content="Nils Mathys">
     <meta name="publisher" content="">
-    <meta name="keywords" content="Nils, Mathys, Software, Engineer, Engineering, Software-Entwicklung">
+    <meta name="keywords" content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent">
     <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
@@ -64,6 +64,8 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="">
@@ -83,7 +85,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                     </div>
                     <div class="py-4 border-bottom">
                         <h2>Nils Mathys</h2>
-                        <p>Professional Software Engineer</p>
+                        <p>Software Engineer in study</p>
                     </div>
                     <div class="mt-4 text-left" id="content">
                         <p style="text-align: center;"><span style="font-size: 14pt;"><strong>Kontaktiere mich</strong></span>
@@ -119,8 +121,58 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                     </div>
                     <div class="border-top pt-4 footer">
                         <p>Copyright &copy; 2020 by Nils Mathys</p>
-                        <p><a href="https://nilsmathys.ch/impressum">Impressum</a> |&nbsp;<a
-                                    href="https://nilsmathys.ch/datenschutz">Datenschutzerkl&auml;rung</a></p>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                Datenschutzerklärung
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Datenschutzerklärung</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <?php echo file_get_contents('text/datenschutz.html');?>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                Impressum
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Impressum</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <?php echo file_get_contents('text/impressum.html');?>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
