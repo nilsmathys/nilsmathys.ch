@@ -123,12 +123,12 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                         <p>Copyright &copy; 2020 by Nils Mathys</p>
                         <div>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#data-secure">
                                 Datenschutzerklärung
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal fade" id="data-secure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -141,7 +141,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                                             <?php echo file_get_contents('text/datenschutz.html');?>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Schliessen</button>
                                         </div>
                                     </div>
                                 </div>
@@ -149,12 +149,12 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                         </div>
                         <div>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#impressum">
                                 Impressum
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -167,7 +167,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                                             <?php echo file_get_contents('text/impressum.html');?>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Schliessen</button>
                                         </div>
                                     </div>
                                 </div>
