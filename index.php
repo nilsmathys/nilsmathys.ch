@@ -54,7 +54,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
     <meta name="author" content="Nils Mathys">
     <meta name="publisher" content="">
     <meta name="keywords" content="Nils, Mathys, Software, Engineer, Engineering, Software-Entwicklung">
-    <meta name="description" content="Nils Mathys, Professional Software Engineer - Kontaktiere mich hier">
+    <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
     <meta name="language" content="de">
@@ -63,8 +63,12 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="">
+
+</div>
 <div class="container my-4">
     <div class="row">
         <div class="col-md-6 m-auto">
@@ -104,7 +108,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                         </form>
                     </div>
                     <div class="border-top mt-4 py-4">
-                        <a href="https://www.linkedin.com/in/Nils-Mathys-b30508115/" target="_blank"
+                        <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
                            class="btn btn-light fa-2x rounded-circle px-3 mr-2">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
