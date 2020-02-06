@@ -64,13 +64,14 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="" rel="stylesheet" id="darkmode">
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-<div class="">
-
-</div>
+<div id="darkmode-toggle">🌓</div>
 <div class="container my-4">
     <div class="row">
         <div class="col-md-6 m-auto">
@@ -79,7 +80,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                     <div class="row">
                         <div class="m-auto col-6 col-md-5 col-lg-4 col-xl-3">
                             <a href="https://nilsmathys.ch">
-                                <img src="img/profilephoto.jpg" class="w-100 my-4 rounded-circle">
+                                <img src="img/profilephoto.jpg" class="w-100 my-4 rounded-circle" id="profilephoto">
                             </a>
                         </div>
                     </div>
@@ -106,7 +107,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                             <div class="g-recaptcha mb-2 "
                                  data-sitekey="<?php echo $cfg['recaptcha_site']; ?>"></div>
-                            <button type="submit" name="send" class="btn btn-primary w-100" value="">Senden</button>
+                            <button type="submit" name="send" class="btn btn-primary btn-lg btn-block" value="">Senden</button>
                         </form>
                     </div>
                     <div class="border-top mt-4 py-4">
@@ -121,14 +122,14 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                     </div>
                     <div class="border-top pt-4 footer">
                         <p>Copyright &copy; 2020 by Nils Mathys</p>
-                        <div>
+                        <div class="border-top mt-2 py-2">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#data-secure">
+                            <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal" data-target="#privacy-policy">
                                 Datenschutzerklärung
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="data-secure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -149,7 +150,7 @@ if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["message"
                         </div>
                         <div>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#impressum">
+                            <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal" data-target="#impressum">
                                 Impressum
                             </button>
 
