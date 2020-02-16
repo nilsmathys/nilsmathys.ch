@@ -14,7 +14,7 @@ a:hover, .form-control:focus {
     border-color: #808080;
 }
 .darkmode-show {
-    display: initial !important;
+    display: inherit !important;
 }
 .darkmode-none {
     display: none;
@@ -26,6 +26,5 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-#profilephoto {
 
-}
+
