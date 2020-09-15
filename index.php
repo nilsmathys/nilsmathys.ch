@@ -160,15 +160,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                     <div class="border-top mt-4 py-4">
                         <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
-                           class="btn btn-light fa-2x rounded-circle px-3 mr-2">
+                           class="btn btn-light fa-2x rounded-circle px-3 mr-3">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
+                        <a href="https://www.crazydog.ch/" target="_blank"
+                           class="btn btn-light fa-2x rounded-circle px-3 mx-3">
+                            <i class="fas fa-dice-five"></i>
+                        </a>
                         <a href="https://github.com/nilsmathys" target="_blank"
-                           class="btn btn-light fa-2x rounded-circle px-3 mx-2">
+                           class="btn btn-light fa-2x rounded-circle px-3 mx-3">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="?toggle"
-                           class="btn btn-light fa-2x rounded-circle px-3 ml-2">
+                           class="btn btn-light fa-2x rounded-circle px-3 ml-3">
                             <i class="fa fa-adjust"></i>
                         </a>
                     </div>
