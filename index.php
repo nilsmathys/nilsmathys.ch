@@ -163,10 +163,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                            class="btn btn-light fa-2x rounded-circle px-3 mr-3">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.crazydog.ch/" target="_blank"
-                           class="btn btn-light fa-2x rounded-circle px-3 mx-3">
-                            <i class="fas fa-dice-five"></i>
-                        </a>
+						<a href="https://beerjump.app" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 mx-3">
+							<i class="fa fa-beer"></i>
+						</a>
                         <a href="https://github.com/nilsmathys" target="_blank"
                            class="btn btn-light fa-2x rounded-circle px-3 mx-3">
                             <i class="fab fa-github"></i>
