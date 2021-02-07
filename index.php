@@ -63,6 +63,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+$profilepic = "profilephoto.jpg";
+$profilepicDarkmode = "profilephoto-darkmode.jpg";
+$background = "background.jpg";
+$backgroundDarkmode = "background-darkmode.jpg";
+if (in_array(date("n"), [1,2,3,12])) {
+    $profilepic = "profilephoto-winter.jpg";
+    $profilepicDarkmode = "profilephoto-winter-darkmode.jpg";
+    $background = "background-winter.jpg";
+    $backgroundDarkmode = "background-winter-darkmode.jpg";
+}
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="author" content="Nils Mathys">
     <meta name="publisher" content="">
     <meta name="keywords"
-          content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent">
+          content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent, It-Student">
     <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
@@ -99,25 +109,45 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <?php if($mode == "dark") { ?>
-    <link href="css/darkmode.css" rel="stylesheet" id="darkmode">
+    <?php if ($mode == "dark") { ?>
+        <link href="css/darkmode.css" rel="stylesheet" id="darkmode">
+        <style>
+            html {
+                background: url("img/<?php echo $backgroundDarkmode; ?>") fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    <?php } else { ?>
+        <style>
+            html {
+                background: url("img/<?php echo $background; ?>") fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
     <?php } ?>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <div class="container my-4">
     <div class="row">
-        <div class="col-md-6 m-auto">
+        <div class="col-md-8 col-lg-6 m-auto">
             <div class="card">
                 <div class="card-body text-center p-4">
                     <div class="row">
                         <div class="m-auto col-6 col-md-5 col-lg-4 col-xl-3">
                             <a href="https://nilsmathys.ch">
-                                <img src="img/profilephoto.jpg" class="w-100 my-4 rounded-circle darkmode-none"
+                                <img src="img/<?php echo $profilepic; ?>" class="w-100 my-4 rounded-circle darkmode-none"
                                      id="profilephoto">
-                                <img src="img/profilephoto-darkmode.jpg"
+                                <img src="img/<?php echo $profilepicDarkmode; ?>"
                                      class="w-100 my-4 rounded-circle d-none darkmode-show" id="profilephoto">
                             </a>
                         </div>
@@ -135,45 +165,64 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
                         <?php } elseif (sizeof($error) > 0) { ?>
                             <div class="alert alert-danger" role="alert">
-                                Bitte prüfe deine Eingaben!
+                                Bitte prüfe Deine Eingaben!
                             </div>
                         <?php } ?>
                         <form method="post">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control <?php if (in_array('name', $error)) { echo "is-invalid"; } ?>" id="input_name" value="<?= $name; ?>"
+                                <input type="text" name="name" class="form-control <?php if (in_array('name', $error)) {
+                                    echo "is-invalid";
+                                } ?>" id="input_name" value="<?= $name; ?>"
                                        placeholder="Name">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control <?php if (in_array('email', $error)) { echo "is-invalid"; } ?>" id="input_email" value="<?= $email; ?>"
+                                <input type="email" name="email"
+                                       class="form-control <?php if (in_array('email', $error)) {
+                                           echo "is-invalid";
+                                       } ?>" id="input_email" value="<?= $email; ?>"
                                        placeholder="E-Mail">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control <?php if (in_array('message', $error)) { echo "is-invalid"; } ?>" name="message" id="input_message"
+                                <textarea class="form-control <?php if (in_array('message', $error)) {
+                                    echo "is-invalid";
+                                } ?>" name="message" id="input_message"
                                           placeholder="Nachricht"><?= $message; ?></textarea>
                             </div>
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                            <div class="g-recaptcha mb-2 " <?php if ($mode == "dark") { echo 'data-theme="dark"'; } ?>
+                            <div class="g-recaptcha mb-2 " <?php if ($mode == "dark") {
+                                echo 'data-theme="dark"';
+                            } ?>
                                  data-sitekey="<?php echo $cfg['recaptcha_site']; ?>"></div>
                             <button type="submit" name="send" class="btn btn-primary btn-lg btn-block" value="">Senden
                             </button>
                         </form>
                     </div>
-                    <div class="border-top mt-4 py-4">
-                        <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
-                           class="btn btn-light fa-2x rounded-circle px-3 mr-3">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-						<a href="https://beerjump.app" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 mx-3">
-							<i class="fa fa-beer"></i>
-						</a>
-                        <a href="https://github.com/nilsmathys" target="_blank"
-                           class="btn btn-light fa-2x rounded-circle px-3 mx-3">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="?toggle"
-                           class="btn btn-light fa-2x rounded-circle px-3 ml-3">
-                            <i class="fa fa-adjust"></i>
-                        </a>
+
+                    <div class="border-top mt-4 py-4 row">
+                        <div class ="col-6 col-md-3">
+                            <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
+                               class="btn btn-light fa-2x rounded-circle px-3">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class ="col-6 col-md-3">
+                            <a href="https://beerjump.app" target="_blank"
+                               class="btn btn-light fa-2x rounded-circle px-3">
+                                <i class="fa fa-beer"></i>
+                            </a>
+                        </div>
+                        <div class ="col-6 col-md-3 mt-3 mt-md-0">
+                            <a href="https://github.com/nilsmathys" target="_blank"
+                               class="btn btn-light fa-2x rounded-circle px-3">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class ="col-6 col-md-3 mt-3 mt-md-0">
+                            <a href="?toggle"
+                               class="btn btn-light fa-2x rounded-circle px-3">
+                                <i class="fa fa-adjust"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="border-top pt-4 footer">
                         <p>Copyright &copy; 2020 by Nils Mathys</p>

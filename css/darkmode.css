@@ -19,12 +19,5 @@ a:hover, .form-control:focus {
 .darkmode-none {
     display: none;
 }
-html {
-    background: url("../img/background-darkmode.jpg") fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 
