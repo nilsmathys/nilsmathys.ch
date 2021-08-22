@@ -1,23 +1,23 @@
-.card, .form-control {
-    background-color: black;
+.bg-light, .form-control {
+    background-color: black !important;
 }
 .form-control:focus {
-    background-color: #333;
+    background-color: #333 !important;
 }
-body, .card, a, .form-control {
-    color: #808080;
+body, .bg-light, a, .form-control {
+    color: #808080 !important;
 }
 a:hover, .form-control:focus {
-    color: white;
+    color: white !important;
 }
-.card, .form-control, .form-control:focus {
-    border-color: #808080;
+.bg-light, .form-control, .form-control:focus {
+    border-color: #808080 !important;
 }
 .darkmode-show {
     display: inherit !important;
 }
 .darkmode-none {
-    display: none;
+    display: none !important;
 }
 
 

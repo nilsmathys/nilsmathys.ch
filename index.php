@@ -7,7 +7,7 @@ if (isset($_GET["toggle"])) {
     } else {
         setcookie('mode', 'light', strtotime('+1 year'));
     }
-    header('Location: https://nilsmathys.ch');
+    header('Location: /');
 }
 
 $cfg = [
@@ -67,7 +67,7 @@ $profilepic = "profilephoto.jpg";
 $profilepicDarkmode = "profilephoto-darkmode.jpg";
 $background = "background.jpg";
 $backgroundDarkmode = "background-darkmode.jpg";
-if (in_array(date("n"), [1,2,3,12])) {
+if (in_array(date("n"), [1, 2, 3, 12])) {
     $profilepic = "profilephoto-winter.jpg";
     $profilepicDarkmode = "profilephoto-winter-darkmode.jpg";
     $background = "background-winter.jpg";
@@ -98,7 +98,7 @@ if (in_array(date("n"), [1,2,3,12])) {
     <meta name="author" content="Nils Mathys">
     <meta name="publisher" content="">
     <meta name="keywords"
-          content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent, It-Student">
+          content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent, It-Student, programmieren, Programmierer">
     <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
@@ -107,7 +107,7 @@ if (in_array(date("n"), [1,2,3,12])) {
     <link rel="canonical" href="https://nilsmathys.ch">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <?php if ($mode == "dark") { ?>
         <link href="css/darkmode.css" rel="stylesheet" id="darkmode">
@@ -131,21 +131,54 @@ if (in_array(date("n"), [1,2,3,12])) {
             }
         </style>
     <?php } ?>
-
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/index.js"></script>
 </head>
 <body>
-<div class="container my-4">
+<div class="container mt-30" id="navigation-bar">
     <div class="row">
-        <div class="col-md-8 col-lg-6 m-auto">
-            <div class="card">
-                <div class="card-body text-center p-4">
-                    <div class="row">
+        <div class="col-md-8 col-lg-12 m-auto">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom rounded-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#cv">CV</a>
+                            <a class="nav-link" href="#kontaktiere-mich">Kontaktiere mich</a>
+                            <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
+                               class="nav-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/nilsmathys" target="_blank"
+                               class="nav-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="?toggle"
+                               class="nav-link">
+                                <i class="fa fa-adjust"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<div class="container mb-4" id="con">
+    <div class="row">
+        <div class="col-md-8 col-lg-12 m-auto">
+            <div class="bg-light rounded-bottom">
+                <div class="text-center p-4">
+                    <div class="row" id="home">
                         <div class="m-auto col-6 col-md-5 col-lg-4 col-xl-3">
-                            <a href="https://nilsmathys.ch">
-                                <img src="img/<?php echo $profilepic; ?>" class="w-100 my-4 rounded-circle darkmode-none"
+                            <a href="/">
+                                <img src="img/<?php echo $profilepic; ?>"
+                                     class="w-100 my-4 rounded-circle darkmode-none"
                                      id="profilephoto">
                                 <img src="img/<?php echo $profilepicDarkmode; ?>"
                                      class="w-100 my-4 rounded-circle d-none darkmode-show" id="profilephoto">
@@ -154,11 +187,94 @@ if (in_array(date("n"), [1,2,3,12])) {
                     </div>
                     <div class="py-4 border-bottom">
                         <h1>Nils Mathys</h1>
-                        <p>Software Engineer in study</p>
+                        <h4>Software Engineer in study</h4>
                     </div>
-                    <div class="mt-4 text-left" id="content">
-                        <p style="text-align: center;"><span style="font-size: 14pt;"><strong>Kontaktiere mich</strong></span>
-                        </p>
+
+
+                    <div class="mt-4 text-left border-bottom" id="cv">
+                        <h2 style="text-align: center"><strong>CV</strong></h2>
+                        <h3><strong>Skills</strong></h3>
+                        <h2>programming languages</h2>
+                        <div class="skillbar" data-percent="75%">
+                            <div class="skillbar-title">Java</div>
+                            <div class="skill-bar-percent">75%</div>
+                            <div class="skillbar-bar" style="width: 75%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent=80%">
+                            <div class="skillbar-title">SwiftUI</div>
+                            <div class="skill-bar-percent">80%</div>
+                            <div class="skillbar-bar" style="width: 80%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="70%">
+                            <div class="skillbar-title">Kotlin</div>
+                            <div class="skill-bar-percent">70%</div>
+                            <div class="skillbar-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="60%">
+                            <div class="skillbar-title">C</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="60%">
+                            <div class="skillbar-title">Assembler</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%;"></div>
+                        </div>
+                        <h2>Web-Skills</h2>
+                        <div class="skillbar" data-percent="40%">
+                            <div class="skillbar-title">React Native</div>
+                            <div class="skill-bar-percent">40%</div>
+                            <div class="skillbar-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="40%">
+                            <div class="skillbar-title">Java Script</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="40%">
+                            <div class="skillbar-title">Type Script</div>
+                            <div class="skill-bar-percent">40%</div>
+                            <div class="skillbar-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="60%">
+                            <div class="skillbar-title">HTML / CSS</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%;"></div>
+                        </div>
+                        <h2>Database</h2>
+                        <div class="skillbar" data-percent="60%">
+                            <div class="skillbar-title">MySQL</div>
+                            <div class="skill-bar-percent">70%</div>
+                            <div class="skillbar-bar" style="width: 70%;"></div>
+                        </div>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                        <p>Blubb</p>
+                    </div>
+                    <div class="mt-4 text-left" id="kontaktiere-mich">
+                        <h2 style="text-align: center"><strong>Kontaktiere mich</strong></h2>
                         <?php if ($sent) { ?>
                             <div class="alert alert-success" role="alert">
                                 Nachricht wurde versendet!
@@ -199,25 +315,25 @@ if (in_array(date("n"), [1,2,3,12])) {
                     </div>
 
                     <div class="border-top mt-4 py-4 row">
-                        <div class ="col-6 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
                                class="btn btn-light fa-2x rounded-circle px-3">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
-                        <div class ="col-6 col-md-3">
+                        <div class="col-6 col-md-3">
                             <a href="https://beerjump.app" target="_blank"
                                class="btn btn-light fa-2x rounded-circle px-3">
                                 <i class="fa fa-beer"></i>
                             </a>
                         </div>
-                        <div class ="col-6 col-md-3 mt-3 mt-md-0">
+                        <div class="col-6 col-md-3 mt-3 mt-md-0">
                             <a href="https://github.com/nilsmathys" target="_blank"
                                class="btn btn-light fa-2x rounded-circle px-3">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
-                        <div class ="col-6 col-md-3 mt-3 mt-md-0">
+                        <div class="col-6 col-md-3 mt-3 mt-md-0">
                             <a href="?toggle"
                                class="btn btn-light fa-2x rounded-circle px-3">
                                 <i class="fa fa-adjust"></i>
@@ -292,5 +408,8 @@ if (in_array(date("n"), [1,2,3,12])) {
         </div>
     </div>
 </div>
+<a id="jump-to-top" href="#home" class="rounded-circle bg-light text-dark">
+    <i class="fa fa-arrow-up"></i>
+</a>
 </body>
 </html>
