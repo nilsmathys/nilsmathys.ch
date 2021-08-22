@@ -153,7 +153,7 @@ if (in_array(date("n"), [1,2,3,12])) {
                         </div>
                     </div>
                     <div class="py-4 border-bottom">
-                        <h2>Nils Mathys</h2>
+                        <h1>Nils Mathys</h1>
                         <p>Software Engineer in study</p>
                     </div>
                     <div class="mt-4 text-left" id="content">
