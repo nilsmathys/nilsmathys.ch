@@ -149,6 +149,7 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                         <div class="navbar-nav">
                             <a class="nav-link" href="#home">Home</a>
                             <a class="nav-link" href="#cv">CV</a>
+                            <a class="nav-link" href="#über_mich">über mich</a>
                             <a class="nav-link" href="#kontaktiere-mich">Kontaktiere mich</a>
                             <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
                                class="nav-link">
@@ -194,7 +195,7 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                     <div class="mt-4 text-left border-bottom" id="cv">
                         <h2 style="text-align: center"><strong>CV</strong></h2>
                         <h3><strong>Skills</strong></h3>
-                        <h2>programming languages</h2>
+                        <h4>Programmiersprachen</h4>
                         <div class="skillbar" data-percent="75%">
                             <div class="skillbar-title">Java</div>
                             <div class="skill-bar-percent">75%</div>
@@ -210,17 +211,17 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                             <div class="skill-bar-percent">70%</div>
                             <div class="skillbar-bar" style="width: 70%;"></div>
                         </div>
-                        <div class="skillbar" data-percent="60%">
+                        <div class="skillbar" data-percent="55%">
                             <div class="skillbar-title">C</div>
-                            <div class="skill-bar-percent">60%</div>
-                            <div class="skillbar-bar" style="width: 60%;"></div>
+                            <div class="skill-bar-percent">55%</div>
+                            <div class="skillbar-bar" style="width: 55%;"></div>
                         </div>
-                        <div class="skillbar" data-percent="60%">
+                        <div class="skillbar" data-percent="55%">
                             <div class="skillbar-title">Assembler</div>
-                            <div class="skill-bar-percent">60%</div>
-                            <div class="skillbar-bar" style="width: 60%;"></div>
+                            <div class="skill-bar-percent">55%</div>
+                            <div class="skillbar-bar" style="width: 55%;"></div>
                         </div>
-                        <h2>Web-Skills</h2>
+                        <h4>Web-Skills</h4>
                         <div class="skillbar" data-percent="40%">
                             <div class="skillbar-title">React Native</div>
                             <div class="skill-bar-percent">40%</div>
@@ -228,50 +229,43 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                         </div>
                         <div class="skillbar" data-percent="40%">
                             <div class="skillbar-title">Java Script</div>
-                            <div class="skill-bar-percent">60%</div>
-                            <div class="skillbar-bar" style="width: 60%;"></div>
+                            <div class="skill-bar-percent">40%</div>
+                            <div class="skillbar-bar" style="width: 40%;"></div>
                         </div>
                         <div class="skillbar" data-percent="40%">
                             <div class="skillbar-title">Type Script</div>
                             <div class="skill-bar-percent">40%</div>
                             <div class="skillbar-bar" style="width: 40%;"></div>
                         </div>
-                        <div class="skillbar" data-percent="60%">
+                        <div class="skillbar" data-percent="70%">
                             <div class="skillbar-title">HTML / CSS</div>
-                            <div class="skill-bar-percent">60%</div>
-                            <div class="skillbar-bar" style="width: 60%;"></div>
-                        </div>
-                        <h2>Database</h2>
-                        <div class="skillbar" data-percent="60%">
-                            <div class="skillbar-title">MySQL</div>
                             <div class="skill-bar-percent">70%</div>
                             <div class="skillbar-bar" style="width: 70%;"></div>
                         </div>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
-                        <p>Blubb</p>
+                        <h4>Datenbanken</h4>
+                        <div class="skillbar" data-percent="60%">
+                            <div class="skillbar-title">MySQL</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%;"></div>
+                        </div>
+                        <h4>Sprachen</h4>
+                        <div class="skillbar" data-percent="100%">
+                            <div class="skillbar-title">Deutsch</div>
+                            <div class="skill-bar-percent">100%</div>
+                            <div class="skillbar-bar" style="width: 100%;"></div>
+                        </div>
+                        <div class="skillbar" data-percent="70%">
+                            <div class="skillbar-title">Englisch</div>
+                            <div class="skill-bar-percent">70%</div>
+                            <div class="skillbar-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="mt-4 text-left border-bottom" id="über_mich">
+                            <h3><strong>Über mich</strong></h3>
+                            <h4>Wer ich bin</h4>
+                            <p>25 Jahre alt, aufgestellt, ruhig und hilfsbereit</p>
+                            <h4>Hobbies</h4>
+                            <p>american Football, Boogie Woogie, Motorrad fahren</p>
+                        </div>
                     </div>
                     <div class="mt-4 text-left" id="kontaktiere-mich">
                         <h2 style="text-align: center"><strong>Kontaktiere mich</strong></h2>
@@ -309,11 +303,15 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                 echo 'data-theme="dark"';
                             } ?>
                                  data-sitekey="<?php echo $cfg['recaptcha_site']; ?>"></div>
-                            <button type="submit" name="send" class="btn btn-primary btn-lg btn-block" value="">Senden
-                            </button>
+                            <?php if ($mode == "dark") { ?>
+                                <button type="submit" name="send" class="btn btn-secondary btn-lg btn-block" value="">Senden
+                                </button>
+                            <?php } else { ?>
+                                <button type="submit" name="send" class="btn btn-primary btn-lg btn-block" value="">Senden
+                                </button>
+                            <?php } ?>
                         </form>
                     </div>
-
                     <div class="border-top mt-4 py-4 row">
                         <div class="col-6 col-md-3">
                             <a href="https://www.linkedin.com/in/nils-mathys-3389b8155/" target="_blank"
@@ -344,11 +342,17 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                         <p>Copyright &copy; 2020 by Nils Mathys</p>
                         <div class="border-top mt-2 py-2">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal"
-                                    data-target="#privacy-policy">
-                                Datenschutzerklärung
-                            </button>
-
+                            <?php if ($mode == "dark") { ?>
+                                <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal"
+                                        data-target="#privacy-policy">
+                                    Datenschutzerklärung
+                                </button>
+                            <?php } else { ?>
+                                <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal"
+                                        data-target="#privacy-policy">
+                                    Datenschutzerklärung
+                                </button>
+                            <?php } ?>
                             <!-- Modal -->
                             <div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog"
                                  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -374,11 +378,17 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                         </div>
                         <div>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal"
-                                    data-target="#impressum">
-                                Impressum
-                            </button>
-
+                            <?php if ($mode == "dark") { ?>
+                                <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="modal"
+                                        data-target="#impressum">
+                                    Impressum
+                                </button>
+                            <?php } else { ?>
+                                <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal"
+                                        data-target="#impressum">
+                                    Impressum
+                                </button>
+                            <?php } ?>
                             <!-- Modal -->
                             <div class="modal fade" id="impressum" tabindex="-1" role="dialog"
                                  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
