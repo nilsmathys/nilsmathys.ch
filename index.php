@@ -269,10 +269,10 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                     <div class="skill-bar-percent">25%</div>
                                     <div class="skillbar-bar" style="width: 25%;"></div>
                                 </div>
-                                <div class="skillbar" data-percent="70%">
+                                <div class="skillbar" data-percent="65%">
                                     <div class="skillbar-title">HTML / CSS</div>
-                                    <div class="skill-bar-percent">70%</div>
-                                    <div class="skillbar-bar" style="width: 70%;"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                    <div class="skillbar-bar" style="width: 65%;"></div>
                                 </div>
                             </div>
                         </div>
