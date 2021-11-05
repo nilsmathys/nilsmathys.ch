@@ -63,6 +63,13 @@ body {
     text-transform: uppercase;
 }
 
+.box {
+    float: left;
+    padding: 5px;
+    width: 50%;
+
+}
+
 /* CENTERING ONLY */
 
 .wrapper {
