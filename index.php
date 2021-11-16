@@ -237,15 +237,15 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                     <div class="skill-bar-percent">55%</div>
                                     <div class="skillbar-bar" style="width: 55%;"></div>
                                 </div>
-                                <div class="skillbar" data-percent="40%">
+                                <div class="skillbar" data-percent="45%">
                                     <div class="skillbar-title">Lisp</div>
-                                    <div class="skill-bar-percent">40%</div>
-                                    <div class="skillbar-bar" style="width: 40%;"></div>
+                                    <div class="skill-bar-percent">45%</div>
+                                    <div class="skillbar-bar" style="width: 45%;"></div>
                                 </div>
-                                <div class="skillbar" data-percent="40%">
+                                <div class="skillbar" data-percent="35%">
                                     <div class="skillbar-title">Fortran</div>
-                                    <div class="skill-bar-percent">40%</div>
-                                    <div class="skillbar-bar" style="width: 40%;"></div>
+                                    <div class="skill-bar-percent">35%</div>
+                                    <div class="skillbar-bar" style="width: 35%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -264,10 +264,10 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                 </div>
                             </div>
                             <div class="box">
-                                <div class="skillbar" data-percent="25%">
+                                <div class="skillbar" data-percent="20%">
                                     <div class="skillbar-title">PHP</div>
-                                    <div class="skill-bar-percent">25%</div>
-                                    <div class="skillbar-bar" style="width: 25%;"></div>
+                                    <div class="skill-bar-percent">20%</div>
+                                    <div class="skillbar-bar" style="width: 20%;"></div>
                                 </div>
                                 <div class="skillbar" data-percent="65%">
                                     <div class="skillbar-title">HTML / CSS</div>
