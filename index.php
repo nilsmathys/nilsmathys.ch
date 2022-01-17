@@ -220,10 +220,10 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                     <div class="skill-bar-percent">55%</div>
                                     <div class="skillbar-bar" style="width: 55%;"></div>
                                 </div>
-                                <div class="skillbar" data-percent="30%">
+                                <div class="skillbar" data-percent="40%">
                                     <div class="skillbar-title">Python</div>
-                                    <div class="skill-bar-percent">30%</div>
-                                    <div class="skillbar-bar" style="width: 30%;"></div>
+                                    <div class="skill-bar-percent">40%</div>
+                                    <div class="skillbar-bar" style="width: 40%;"></div>
                                 </div>
                                 <div class="skillbar" data-percent="40%">
                                     <div class="skillbar-title">Prolog</div>
@@ -412,7 +412,7 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                             </div>
                         </div>
                         <div class="border-top pt-4 footer">
-                            <p>Copyright &copy; <?php  echo date("Y"); ?> by Nils Mathys</p>
+                            <p>Copyright &copy; <?php echo date("Y"); ?> by Nils Mathys</p>
                             <div class="border-top mt-2 py-2">
                                 <!-- Button trigger modal -->
                                 <?php if ($mode == "dark") { ?>
