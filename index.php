@@ -225,7 +225,7 @@ if (in_array(date("n"), [1,2,3,12])) {
                         </div>
                     </div>
                     <div class="border-top pt-4 footer">
-                        <p>Copyright &copy; 2020 by Nils Mathys</p>
+                        <p>Copyright &copy; <?php echo date("Y"); ?> by Nils Mathys</p>
                         <div class="border-top mt-2 py-2">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-info btn-sm btn-block" data-toggle="modal"
