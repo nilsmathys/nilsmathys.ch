@@ -217,13 +217,13 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                             <div class="box">
                                 <div class="skillbar" data-percent="60%">
                                     <div class="skillbar-title">C</div>
-                                    <div class="skill-bar-percent">55%</div>
-                                    <div class="skillbar-bar" style="width: 55%;"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                    <div class="skillbar-bar" style="width: 60%;"></div>
                                 </div>
                                 <div class="skillbar" data-percent="40%">
                                     <div class="skillbar-title">Python</div>
-                                    <div class="skill-bar-percent">40%</div>
-                                    <div class="skillbar-bar" style="width: 40%;"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                    <div class="skillbar-bar" style="width: 60%;"></div>
                                 </div>
                                 <div class="skillbar" data-percent="40%">
                                     <div class="skillbar-title">Prolog</div>
@@ -244,8 +244,8 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                 </div>
                                 <div class="skillbar" data-percent="35%">
                                     <div class="skillbar-title">Fortran</div>
-                                    <div class="skill-bar-percent">35%</div>
-                                    <div class="skillbar-bar" style="width: 35%;"></div>
+                                    <div class="skill-bar-percent">40%</div>
+                                    <div class="skillbar-bar" style="width: 40%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -266,8 +266,8 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                             <div class="box">
                                 <div class="skillbar" data-percent="20%">
                                     <div class="skillbar-title">PHP</div>
-                                    <div class="skill-bar-percent">20%</div>
-                                    <div class="skillbar-bar" style="width: 20%;"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                    <div class="skillbar-bar" style="width: 65%;"></div>
                                 </div>
                                 <div class="skillbar" data-percent="65%">
                                     <div class="skillbar-title">HTML / CSS</div>
@@ -333,9 +333,9 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                         <div class="mt-4 text-left border-bottom" id="über_mich">
                             <h3><strong>Über mich</strong></h3>
                             <h4>Wer ich bin</h4>
-                            <p>25 Jahre alt, aufgestellt, ruhig und hilfsbereit</p>
+                            <p>26 Jahre alt, aufgestellt, ruhig und hilfsbereit</p>
                             <h4>Hobbies</h4>
-                            <p>american Football, Boogie Woogie, Motorrad fahren</p>
+                            <p>American Football, Boogie Woogie, Motorrad fahren</p>
                         </div>
                         <div class="mt-4 text-left" id="kontaktiere-mich">
                             <h2 style="text-align: center"><strong>Kontaktiere mich</strong></h2>
