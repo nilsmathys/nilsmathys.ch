@@ -99,7 +99,7 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
     <meta name="publisher" content="">
     <meta name="keywords"
           content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent, It-Student, programmieren, Programmierer">
-    <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
+    <meta name="description" content="Nils Mathys, Software Engineer - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
     <meta name="language" content="de">
@@ -189,7 +189,7 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                     </div>
                     <div class="py-4 border-bottom">
                         <h1>Nils Mathys</h1>
-                        <h4>Software Engineer in study</h4>
+                        <h4>Software Engineer</h4>
                     </div>
 
 
@@ -262,6 +262,11 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                     <div class="skill-bar-percent">50%</div>
                                     <div class="skillbar-bar" style="width: 50%;"></div>
                                 </div>
+                                <div class="skillbar" data-percent="20%">
+                                    <div class="skillbar-title">Laravel</div>
+                                    <div class="skill-bar-percent">70%</div>
+                                    <div class="skillbar-bar" style="width: 70%;"></div>
+                                </div>
                             </div>
                             <div class="box">
                                 <div class="skillbar" data-percent="20%">
@@ -273,6 +278,11 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                                     <div class="skillbar-title">HTML / CSS</div>
                                     <div class="skill-bar-percent">65%</div>
                                     <div class="skillbar-bar" style="width: 65%;"></div>
+                                </div>
+                                <div class="skillbar" data-percent="65%">
+                                    <div class="skillbar-title">Livewire</div>
+                                    <div class="skill-bar-percent">70%</div>
+                                    <div class="skillbar-bar" style="width: 70%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -334,6 +344,85 @@ if (in_array(date("n"), [1, 2, 3, 12])) {
                             <h3><strong>Über mich</strong></h3>
                             <h4>Wer ich bin</h4>
                             <p>26 Jahre alt, aufgestellt, ruhig und hilfsbereit</p>
+                            <h4>Lebenslauf</h4>
+                            <h5></h5>
+                            <h5>Ausbildung</h5>
+                            <ul>
+                                <li>
+                                    <div><b>September 2018 – Juli 2022</b></div>
+                                    <div>Teilzeitstudium Bachelor of Science ZFH in
+                                        Informatik, Zürcher Hochschule für Angewandte
+                                        Wissenschaften</div>
+                                </li>
+                                <li>
+                                    <div><b>Juli 2017 – Mai 2018</b></div>
+                                    <div>Rekrutenschule und Unteroffiziersschule
+                                        Übermittlungspionier Informatikschule 61</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2016 – Juli 2017</b></div>
+                                    <div>Berufsmaturität Ausrichtung Technik,
+                                        Architektur und Life Science</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2012 – Juli 2016</b></div>
+                                    <div>Ausbildung Elektroinstallateur EFZ bei
+                                        der ZWIWO AG</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2009 – Juli 2012</b></div>
+                                    <div>Sekundarschule Flaachtal,
+                                        Stammklasse A</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2003 – Juli 2009</b></div>
+                                    <div>Primarschule in Buch am Irchel</div>
+                                </li>
+                            </ul>
+                            <h5>Weitere Ausbildungen</h5>
+                            <ul>
+                                <li>
+                                    <div><b>Nov 2017 – Mai 2018</b></div>
+                                    <div>Militärische Ausbildung zum Gruppenführer</div>
+                                </li>
+                                <li>
+                                    <div><b>April 2015</b></div>
+                                    <div>J&S Leiter Lagersport/Trekking</div>
+                                </li>
+                            </ul>
+                            <h5>Weitere Ausbildungen</h5>
+                            <ul>
+                                <li>
+                                    <div><b>Seit Juli 2022</b></div>
+                                    <div>Full-Stack-Entwickler Laravel, 100%,
+                                        hosttech GmbH, Richterswil ZH</div>
+                                </li>
+                                <li>
+                                    <div><b>September 2020 – Juni 2022y</b></div>
+                                    <div>Datacenter Engineer, 60%,
+                                        hosttech GmbH, Richterswil ZH</div>
+                                </li>
+                                <li>
+                                    <div><b>März 2020 – August 2020</b></div>
+                                    <div>Praktikum Support / Datacenter, 60%,
+                                        hosttech GmbH, Richterswil ZH</div>
+                                </li>
+                                <li>
+                                    <div><b>Oktober 2019 – Februar 2020</b></div>
+                                    <div>Elektroinstallateur EFZ, 60%,
+                                        Elektro Küng + Traber AG, Islikon TG</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2018 - August 2019</b></div>
+                                    <div>Elektroinstallateur EFZ, 40%,
+                                        ZWIWO AG, Neftenbach ZH</div>
+                                </li>
+                                <li>
+                                    <div><b>August 2012 – Juli 2016</b></div>
+                                    <div>Ausbildung Elektroinstallateur EFZ,
+                                        ZWIWO AG, Neftenbach ZH</div>
+                                </li>
+                            </ul>
                             <h4>Hobbies</h4>
                             <p>American Football, Boogie Woogie, Motorrad fahren</p>
                         </div>
