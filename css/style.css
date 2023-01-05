@@ -30,8 +30,51 @@ body {
     margin-bottom: 30px;
 }
 
+/*.skillbar-bar:before {*/
+/*    background: #eee;*/
+/*    content: "";*/
+/*    height: 3px;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    z-index: -1;*/
+/*}*/
+
+/*.skillbar-bar {*/
+/*    height: 3px;*/
+/*    width: 0px;*/
+/*    background: #323232;*/
+/*    transition-property: width, background-color;*/
+/*}*/
+
+/*.skillbar-title {*/
+/*    color: #323232;*/
+/*    font-size: 11px;*/
+/*    font-weight: 600;*/
+/*    text-transform: uppercase;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.skill-bar-percent {*/
+/*    float: right;*/
+/*    display: inline-block;*/
+/*    color: #323232;*/
+/*    font-size: 11px;*/
+/*    font-weight: 600;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+body, .bg-light, a, .form-control {
+    color: #172033 !important;
+}
+a:hover, .form-control:focus {
+    color: #172033 !important;
+}
+.bg-light, .form-control, .form-control:focus {
+    border-color: #24314F !important;
+}
+
 .skillbar-bar:before {
-    background: #eee;
+    background: #5D81CF;
     content: "";
     height: 3px;
     position: absolute;
@@ -42,12 +85,12 @@ body {
 .skillbar-bar {
     height: 3px;
     width: 0px;
-    background: #323232;
+    background: #24314F;
     transition-property: width, background-color;
 }
 
 .skillbar-title {
-    color: #323232;
+    color: #172033;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
@@ -57,7 +100,7 @@ body {
 .skill-bar-percent {
     float: right;
     display: inline-block;
-    color: #323232;
+    color: #172033;
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;

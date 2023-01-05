@@ -1,23 +1,69 @@
+/*.bg-light, .form-control {*/
+/*    background-color: black !important;*/
+/*}*/
+/*.form-control:focus {*/
+/*    background-color: #333 !important;*/
+/*}*/
+/*body, .bg-light, a, .form-control {*/
+/*    color: #808080 !important;*/
+/*}*/
+/*a:hover, .form-control:focus {*/
+/*    color: white !important;*/
+/*}*/
+/*.bg-light, .form-control, .form-control:focus {*/
+/*    border-color: #808080 !important;*/
+/*}*/
+/*.darkmode-show {*/
+/*    display: inherit !important;*/
+/*}*/
+/*.darkmode-none {*/
+/*    display: none !important;*/
+/*}*/
+
+/*.skillbar-bar {*/
+/*    background: #808080;*/
+/*}*/
+
+/*.skill-bar-percent {*/
+/*    color: #808080;*/
+/*}*/
+
+/*.skillbar-title {*/
+/*    color: white;*/
+/*}*/
+
 .bg-light, .form-control {
-    background-color: black !important;
+    background-color: #172033 !important;
 }
 .form-control:focus {
     background-color: #333 !important;
 }
 body, .bg-light, a, .form-control {
-    color: #808080 !important;
+    color: #5D81CF !important;
 }
 a:hover, .form-control:focus {
-    color: white !important;
+    color: #5D81CF !important;
 }
 .bg-light, .form-control, .form-control:focus {
-    border-color: #808080 !important;
+    border-color: #40598F !important;
 }
 .darkmode-show {
     display: inherit !important;
 }
 .darkmode-none {
     display: none !important;
+}
+
+.skillbar-bar {
+    background: #40598F;
+}
+
+.skill-bar-percent {
+    color: #5D81CF;
+}
+
+.skillbar-title {
+    color: #5D81CF;
 }
 
 
