@@ -99,7 +99,7 @@ if (in_array(date("n"), [1,2,3,12])) {
     <meta name="publisher" content="">
     <meta name="keywords"
           content="Nils, Mathys, Software Engineer, Engineering, Software-Entwicklung, Informatikstudent, It-Student">
-    <meta name="description" content="Nils Mathys, Software Engineer in study - Kontaktiere mich hier">
+    <meta name="description" content="Nils Mathys, Software Engineer - Kontaktiere mich hier">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="Nils Mathys, nilsmathys.ch">
     <meta name="language" content="de">
@@ -154,7 +154,7 @@ if (in_array(date("n"), [1,2,3,12])) {
                     </div>
                     <div class="py-4 border-bottom">
                         <h2>Nils Mathys</h2>
-                        <p>Software Engineer in study</p>
+                        <p>Software Engineer</p>
                     </div>
                     <div class="mt-4 text-left" id="content">
                         <p style="text-align: center;"><span style="font-size: 14pt;"><strong>Kontaktiere mich</strong></span>
