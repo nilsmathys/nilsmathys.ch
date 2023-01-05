@@ -1,3 +1,10 @@
+
+<!---->
+<!---->
+<!---->
+<!--ONEPAGER IST NICHT AKTIV -> muss in plesk auf onepager gehen -> hostingeinstellungen -> websitestatus auf aktiv-->
+<!---->
+<!---->
 <?php
 $mode = isset($_COOKIE['mode']) ? $_COOKIE['mode'] : 'light';
 
